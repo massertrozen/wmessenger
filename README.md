@@ -23,3 +23,7 @@ Also, there is night theme toggler.
 
 ## Technology:
 - Node.js;
+- Socket.io;
+- Mongoose;
+- jQuery;
+- Material UI;

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>WMessenger — an online chat for a local network.</title>
+        <link rel="stylesheet" href="/client/css/style.css">
+        <link rel="stylesheet" href="/client/css/material-icons.css">
+        <script type="text/javascript" src="/client/js/jquery.js"></script>
+        <script type="text/javascript" src="/client/js/main.js"></script>        
+    </head>
+
+    <body>
+        <audio id="notification-sound" preload="auto" src="/client/audio/open-ended.mp3"></audio>
+
+        <div class="chat card-2">
+            <div class="chat-dialogs">
+                <div class="chat-menu dialogs">
+                    <div class="chat-menu-item"><i class="material-icons">face</i></div>
+                    <div class="chat-menu-item"><i class="material-icons">face</i></div>
+                    <div class="chat-menu-item"><i class="material-icons">face</i></div>
+                </div>
+                <div class="chat-dialogs-body"></div>
+            </div>
+            <div class="chat-messages">
+                <div class="chat-menu messages">
+                    <div class="chat-menu-item"><i class="material-icons">face</i></div>
+                    <div class="chat-menu-item"><i class="material-icons">face</i></div>
+                    <div class="chat-menu-item"><i class="material-icons">face</i></div>
+                </div>
+                <div class="chat-messages-body"></div>
+                <form class="chat-messages-send">
+                    <i class="material-icons">notes</i>
+                    <input type="text" name="message" class="chat-messages-send-value" placeholder="Напишите сообщение..." autofocus />
+                    <button type="submit"><i class="material-icons">send</i></button>
+                </form>
+            </div>
+        </div> 
+         
+        <script src="/socket.io/socket.io.js"></script>
+    </body>
+</html>
